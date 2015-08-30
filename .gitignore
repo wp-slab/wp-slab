@@ -1,0 +1,7 @@
+/vendor
+
+/public/wp
+/public/sitemap.xml
+/public/sitemap.xml.gz
+
+/public/app/plugins/slab-core

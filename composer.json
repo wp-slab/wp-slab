@@ -1,0 +1,43 @@
+{
+    "name": "wp-slab/wp-slab",
+    "description": "A modern WordPress platform",
+    "keywords": ["slab", "wordpress"],
+    "homepage": "http://www.wp-slab.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Lanchester",
+            "email": "luke@lukelanchester.com",
+            "homepage": "http://hybridlogic.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "composer/installers": "~1.0.12",
+        "johnpbloch/wordpress": "4.3",
+        "wp-slab/slab-core": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "public/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "public/wp"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf public/wp/wp-content",
+            "rm -rf public/wp/composer.json",
+            "rm -rf public/wp/license.txt",
+            "rm -rf public/wp/readme.html",
+            "rm -rf public/wp/wp-config-sample.php"
+        ],
+        "post-update-cmd": [
+            "rm -rf public/wp/wp-content",
+            "rm -rf public/wp/composer.json",
+            "rm -rf public/wp/license.txt",
+            "rm -rf public/wp/readme.html",
+            "rm -rf public/wp/wp-config-sample.php"
+        ]
+    }
+}
