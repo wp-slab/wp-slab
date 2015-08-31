@@ -5,3 +5,6 @@
 /public/sitemap.xml.gz
 
 /public/app/plugins/slab-core
+/public/app/plugins/slab-db
+/public/app/plugins/slab-router
+/public/app/plugins/slab-view
