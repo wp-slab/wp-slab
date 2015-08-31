@@ -1,3 +1,4 @@
+RedirectMatch 301 ^/wp/$ /
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
