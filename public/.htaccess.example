@@ -1,4 +1,9 @@
+# Disallow access to wp directory
 RedirectMatch 301 ^/wp/$ /
+
+# Force trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)([^/])$ /$1$2/ [L,R=301]
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
