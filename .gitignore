@@ -1,4 +1,5 @@
 /vendor
+/.env
 
 /public/wp
 /public/sitemap.xml
