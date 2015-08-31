@@ -1,11 +1,14 @@
 <?php
 
 define('CONFIG_DIR', dirname(__FILE__));
-define('PUBLIC_DIR', realpath(dirname(__FILE__) . '/../public'));
+define('BASE_DIR', realpath(CONFIG_DIR . '/..'));
+define('PUBLIC_DIR', BASE_DIR . '/public');
 
+$dotenv = new Dotenv\Dotenv(BASE_DIR);
+$dotenv->load();
 
 define('WP_HOME', getenv('WP_HOME'));
-define('WP_SITEURL', WP_HOME . '/wp');
+define('WP_SITEURL', getenv('WP_SITEURL'));
 
 define('DB_NAME', getenv('WP_DB_NAME'));
 define('DB_USER', getenv('WP_DB_USER'));

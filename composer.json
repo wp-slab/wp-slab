@@ -16,6 +16,7 @@
 		"php": ">=5.5.9",
 		"composer/installers": "~1.0.12",
 		"johnpbloch/wordpress": "4.3.*",
+		"vlucas/phpdotenv": "2.0.*",
 		"wp-slab/slab-core": "dev-master",
 		"wp-slab/slab-db": "dev-master",
 		"wp-slab/slab-router": "dev-master",
