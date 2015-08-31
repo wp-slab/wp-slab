@@ -4,8 +4,10 @@ define('CONFIG_DIR', dirname(__FILE__));
 define('BASE_DIR', realpath(CONFIG_DIR . '/..'));
 define('PUBLIC_DIR', BASE_DIR . '/public');
 
-$dotenv = new Dotenv\Dotenv(BASE_DIR);
-$dotenv->load();
+if(file_exists(BASE_DIR . '/.env')) {
+	$dotenv = new Dotenv\Dotenv(BASE_DIR);
+	$dotenv->load();
+}
 
 define('WP_HOME', getenv('WP_HOME'));
 define('WP_SITEURL', getenv('WP_SITEURL'));
