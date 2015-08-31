@@ -14,9 +14,9 @@ define('WP_CONTENT_DIR', PUBLIC_DIR . '/app' );
 define('WP_CONTENT_URL', WP_SITEURL . '/app');
 define('UPLOADS', '../storage/uploads');
 
-define('DB_NAME', getenv('WP_DB_NAME'));
-define('DB_USER', getenv('WP_DB_USER'));
-define('DB_PASSWORD', getenv('WP_DB_PASSWORD'));
+define('DB_NAME', getenv('DB_NAME'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_HOST', getenv('DB_HOST')?:'localhost');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
