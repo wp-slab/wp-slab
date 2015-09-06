@@ -20,6 +20,7 @@
 		"wp-slab/slab-core": "dev-master",
 		"wp-slab/slab-db": "dev-master",
 		"wp-slab/slab-router": "dev-master",
+		"wp-slab/slab-theme": "dev-master",
 		"wp-slab/slab-view": "dev-master"
 	},
 	"extra": {
